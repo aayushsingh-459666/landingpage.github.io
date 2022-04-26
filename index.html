@@ -1,0 +1,770 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWorld | A world of photograpy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=My+Soul&family=Poppins:wght@300&family=Rubik+Moonrocks&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/44aacfdefa.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js">
+    </script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="/style.css">
+
+
+</head>
+
+<body class="font-poppins font-light">
+    <!-- Navigation bar -Navbar -->
+
+    <head>
+        <nav class="nav  flex items-center justify-between pl-4 pr-4 py-4 mxl:py-1 mxl:pr-1 dark:bg-slate-900">
+
+            <div class="logo cursor-pointer text-4xl font-bold font-rubik dark:text-slate-300"><span
+                    class="text-red-400">My</span>World
+            </div>
+
+            <div class="hidden mxl:flex :items-center mxl:justify-between w-full px-6  py-6">
+
+                <ul class="navbar-left flex items-center justify-start space-x-10">
+
+                    <li></li>
+                    <li
+                        class="nav-items font-semibold text-lg hover:text-red-400 dark:text-slate-200 dark:font-medium dark:hover:text-sky-400">
+                        <a href="#home" class="">Home</a>
+                    </li>
+                    <li
+                        class="nav-items font-semibold text-lg hover:text-red-400 dark:text-slate-200 dark:font-medium dark:hover:text-sky-400">
+                        <a href="#about" class="">About</a>
+                    </li>
+                    <li
+                        class="nav-items font-semibold text-lg hover:text-red-400 dark:text-slate-200 dark:font-medium dark:hover:text-sky-400">
+                        <a href="#activity" class="">Activity</a>
+                    </li>
+                    <li
+                        class="nav-items font-semibold text-lg relative  group transition-all duration-300 cursor-default dark:bg-slate-900 dark:text-slate-200 dark:font-medium">
+                        More
+                        <ul
+                            class="absolute top-6 bg-white px-6 py-4 rounded-md invisible group-hover:visible space-y-2 drop-shadow-md dark:bg-slate-900 dark:font-medium">
+                            <li
+                                class="nav-items font-semibold text-lg cursor-pointer hover:text-red-400 dark:text-slate-200 dark:font-medium dark:hover:text-sky-400">
+                                <a href="#portfolio" class="">Portfolio</a>
+                            </li>
+                            <li
+                                class="nav-items font-semibold text-lg cursor-pointer hover:text-red-400 dark:text-slate-200 dark:font-medium  dark:hover:text-sky-400">
+                                <a href="#blog" class="">Blog</a>
+                            </li>
+                            <li
+                                class="nav-items font-semibold text-lg cursor-pointer hover:text-red-400 dark:textslate-200e dark:font-medium dark:hover:text-sky-400">
+                                <a href="#people" class="">Testimonial</a>
+                            </li>
+                            <li
+                                class="nav-items font-semibold text-lg cursor-pointer hover:text-red-400 dark:text-slate-200 dark:font-medium dark:hover:text-sky-400">
+                                <a href="#contact" class="">Contact</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+                </ul>
+
+                <ul class="navbar-right flex items-center justify-end space-x-8 space-y-1">
+                    <li></li>
+                    <li class="nav-items font-semibold text-lg hover:text-red-400 relative">
+                        <a href="#"
+                            class="btn bg-transparent text-black hover:bg-transparent  border-2 border-solid border-transparent  hover:text-red-400 hover:border-red-400 dark:text-slate-200 dark:hover:border-slate-500 dark:bg-transparent dark:hover:bg-transparent ">Sign
+                            in</a>
+                    </li>
+                    <li class="nav-items font-semibold text-lg hover:text-red-400">
+                        <a href="#" class="btn ">Sign Up</a>
+                    </li>
+
+                    <li class="nav-items font-semibold text-lg hover:text-red-400 dark:hover:text-slate-100 dark:text-slate-200 cursor-pointer"
+                        id="toggle-dark">
+                        <i class="fa-solid fa-moon"></i>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="phone mxl:hidden">
+                <div class="hamburger space-y-1 cursor-pointer">
+                    <div class="line w-8 h-1 bg-red-400 dark:bg-slate-500"></div>
+                    <div class="line w-8 h-1 bg-red-400 dark:bg-slate-500"></div>
+                    <div class="line w-8 h-1 bg-red-400 dark:bg-slate-500"></div>
+                </div>
+                <div class="invisible sidebar fixed inset-0 sidebar-bg h-full -z-10">
+                    <div class="sidebar-menu bg-white h-full w-4/6 sm:w-2/5 flex flex-col dark:bg-slate-900">
+                        <div
+                            class="logo cursor-pointer text-2xl font-semibold font-rubik space-x-10 flex items-center relative">
+                            <h4></h4>
+                            <h4 class="text-red-400">My<span class="text-black dark:text-slate-300">World</span></h4>
+                            <p
+                                class="closebtn text-3xl font-poppins absolute right-2 dark:text-slate-200 hover:text-red-400 dark:hover:text-slate-400">
+                                &times;</p>
+                        </div>
+                        <ul class="flex flex-col  space-x-10 mt-4 dark:text-slate-200">
+
+                            <li></li>
+                            <li class="nav-items font-semibold text-lg dark:font-medium">
+                                <a href="#home" class="hover:text-red-400 dark:hover:text-slate-400">Home</a>
+                            </li>
+                            <li class="nav-items font-semibold text-lg dark:font-medium">
+                                <a href="#about" class="hover:text-red-400 dark:hover:text-slate-400">About</a>
+                            </li>
+                            <li class="nav-items font-semibold text-lg dark:font-medium">
+                                <a href="#activity" class="hover:text-red-400 dark:hover:text-slate-400">Activity</a>
+                            </li>
+                            <li class="nav-items font-semibold text-lg dark:font-medium">
+                                <a href="#portfolio" class="hover:text-red-400 dark:hover:text-slate-400">Portfolio</a>
+                            </li>
+                            <li class="nav-items font-semibold text-lg dark:font-medium">
+                                <a href="#blog" class="hover:text-red-400 dark:hover:text-slate-400 ">Blog</a>
+                            </li>
+                            <li class="nav-items font-semibold text-lg dark:font-medium">
+                                <a href="#people" class="hover:text-red-400 dark:hover:text-slate-400 ">Testimonial</a>
+                            </li>
+                            <li class="nav-items font-semibold text-lg dark:font-medium">
+                                <a href="#contact" class="hover:text-red-400 dark:hover:text-slate-400">Contact</a>
+                            </li>
+
+
+                        </ul>
+                        <ul class="flex space-x-10 space-y-1 flex-col dark:text-slate-200">
+                            <li></li>
+                            <li class="nav-items font-semibold text-lg  relative  dark:font-medium">
+                                <a href="#" class="hover:text-red-400 dark:hover:text-slate-400">Sign
+                                    in</a>
+                            </li>
+                            <li class="nav-items font-semibold text-lg   dark:font-medium">
+                                <a href="#" class="hover:text-red-400 dark:hover:text-slate-400">Sign Up</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Toggle Dark mode -->
+            <div class="mxl:hidden fixed bottom-5 right-2 z-10  font-semibold text-lg hover:text-red-400 px-4 py-2 rounded-[50%] bg-white cursor-pointer dark:bg-slate-700 dark:text-slate-300"
+                id="toggle-dark2">
+                <i class="fa-solid fa-moon"></i>
+            </div>
+        </nav>
+    </head>
+
+    <!-- Section for info -->
+    <section id="home"
+        class="bg-red-400 px-4 py-6 sm:px-6 sm:py-8 md:px-10 min-h-[40vh] sm:min-h-[60vh]  lg:min-h-full lg:px-20 lg:py-48 flex lg:block dark:bg-slate-800">
+        <div class="intro flex items-center justify-center flex-col ">
+            <h1
+                class="text-xl  text-white text-center sm:text-3xl lg:text-5xl w-9/12 sm:w-7/12 md:w-4/6 lg:w-4/6 font-semibold dark:text-pros-dark">
+                A CAMERA IS THE SAVE BUTTON FOR THE MIND’S EYE</h1>
+            <p class=" text-white text-center mt-6 sm:text-xl xl:text-3xl w-5/6 sm:w-4/6 dark:text-pros-dark">Inros is a
+                modern classic Photo Studio.
+                Use this theme for company blog, magazine, niche or personal blog.</p>
+        </div>
+    </section>
+
+    <!-- section for about -->
+    <section id="about" class="text-black relative mx-0 my-0 flex flex-col">
+        <div class="bg-red-400 flex md:items-center  ">
+            <div class="img-box flex flex-col md:flex-row ">
+                <div class="relative">
+                    <div class="img-overlay   "></div>
+                    <img src="/img/girl1.jpg" alt="" class="w-full md:w-[50vw] ">
+                </div>
+                <div class="relative">
+                    <div class="img-overlay  "></div>
+                    <img src="/img/girl2.jpg" alt="" class="w-full md:w-[50vw] ">
+                </div>
+            </div>
+        </div>
+        <div class="py-4 flex items-center justify-center bg-red-400 relative dark:bg-slate-800">
+            <div class="contact flex items-center justify-center px-4 md:px-2">
+                <div
+                    class="flex flex-col lg:flex-row  justify-center w-full md:w-3/4 border-none bg-white text-black rounded-3xl mt-10 lg:-mt-56 ">
+                    <div class="img-box relative w-full lg:w-1/2 ">
+                        <div
+                            class="img-overlay rounded-tr-3xl lg:rounded-tr-none rounded-tl-3xl lg:rounded-bl-3xl w-full md:h-full">
+                        </div>
+                        <img src="img/girl3.jpg" alt=""
+                            class="w-full rounded-tr-3xl lg:rounded-tr-none rounded-tl-3xl lg:rounded-bl-3xl md:h-full">
+                    </div>
+                    <div
+                        class="content w-full lg:w-1/2 px-4 py-4 pr-2 md:px-6 md:py-6 md:pr-6 xl:px-10 xl:py-10 xl:pr-5 lg:rounded-tr-3xl lg:rounded-br-3xl dark:bg-slate-700 dark:text-pros-dark">
+                        <h3 class="font-semibold text-base xl:text-3xl text-black dark:text-sky-500">I AM SANDRA REIGEL
+                        </h3>
+                        <p class=" text-red-400 font-medium text-sm lg:text-base my-2 lg:my-3 dark:text-slate-400">
+                            Professional photographer
+                        </p>
+                        <div class="line bg-red-400 w-24 h-1 my-6 "></div>
+                        <p class="text-start text-sm lg:text-base lg:my-8">Sed do eiusmod tempor incididunt ut labore et
+                            dolo magna aliqua. Ut enim ad minim veniam, quis nostd exercitation ullamco laboris nisi ut
+                            aliquip ex ea mo consequat. Duis aute irure dolor in reprehenderit in ullamco.</p>
+                        <a href="#" class="btn w-32 my-4  xl:mt-6 ">Contact</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- section for recent works -->
+    <section id="activity" class="text-white px-4 py-8 bg-red-400 dark:bg-slate-800">
+        <div class="swiper ">
+            <div class="my-4 md:mt-4 lg:mt-8 flex items-center justify-between">
+                <h3 class="text-base font-semibold md:text-2xl lg:text-3xl dark:text-pros-dark">Recent works</h3>
+                <div class="flex">
+
+                    <div class="swiper-button-prev after:content-['prev']"></div>
+                    <div class="swiper-button-next after:content-['next']"></div>
+                </div>
+            </div>
+            <div class="swiper-wrapper space-x-6 py-10 px-5 pb-14 ">
+                <div
+                    class="rounded-3xl story swiper-slide group hover:scale-x-110 hover:scale-y-110 transition-all ease-in  duration-500 hover:box-shadow">
+                    <div class="imgbox relatmd">
+                        <div class="img-overlay rounded-3xl group-hover:img-effect ">
+                            <div class="bottom-area absolute bottom-8 left-5">
+                                <h4 class="text-base lg:text-lg font-semibold text-white dark:text-slate-300">Classical
+                                    photography</h4>
+                            </div>
+                        </div>
+                        <img src="img/recent-img1.jpg" alt="" class="rounded-3xl">
+                    </div>
+                </div>
+
+
+                <div
+                    class="story swiper-slide group hover:scale-x-110 hover:scale-y-110 transition-all ease-in  duration-500 ">
+                    <div class="imgbox relatmd">
+                        <div class="img-overlay rounded-3xl group-hover:img-effect">
+                            <div class="bottom-area absolute bottom-8 left-5">
+                                <h4 class="text-base lg:text-lg font-semibold text-white dark:text-slate-300 ">Classical
+                                    photography</h4>
+                            </div>
+                        </div>
+                        <img src="img/recent-img2.jpg" alt="" class="rounded-3xl">
+                    </div>
+                </div>
+                <div
+                    class="story swiper-slide group hover:scale-x-110 hover:scale-y-110 transition-all ease-in  duration-500">
+                    <div class="imgbox relatmd">
+                        <div class="img-overlay rounded-3xl group-hover:img-effect">
+                            <div class="bottom-area absolute bottom-8 left-5">
+                                <h4 class="text-base lg:text-lg font-semibold text-white dark:text-slate-300">Classical
+                                    photography</h4>
+                            </div>
+                        </div>
+                        <img src="img/recent-img3.jpg" alt="" class="rounded-3xl">
+                    </div>
+                </div>
+                <div
+                    class="story swiper-slide group hover:scale-x-110 hover:scale-y-110 transition-all ease-in  duration-500">
+                    <div class="imgbox relatmd">
+                        <div class="img-overlay rounded-3xl group-hover:img-effect">
+                            <div class="bottom-area absolute bottom-8 left-5">
+                                <h4 class="text-base lg:text-lg font-semibold text-white dark:text-slate-300">Classical
+                                    photography</h4>
+                            </div>
+                        </div>
+                        <img src="img/recent-img4.jpg" alt="" class="rounded-3xl">
+                    </div>
+                </div>
+                <div
+                    class="story swiper-slide group hover:scale-x-110 hover:scale-y-110 transition-all ease-in  duration-500">
+                    <div class="imgbox relatmd">
+                        <div class="img-overlay rounded-3xl group-hover:img-effect">
+                            <div class="bottom-area absolute bottom-8 left-5">
+                                <h4 class="text-base lg:text-lg font-semibold text-white dark:text-slate-300">Classical
+                                    photography</h4>
+                            </div>
+                        </div>
+                        <img src="img/recent-img1.jpg" alt="" class="rounded-3xl">
+                    </div>
+                </div>
+                <div
+                    class="story swiper-slide group hover:scale-x-110 hover:scale-y-110 transition-all ease-in  duration-500">
+                    <div class="imgbox relatmd">
+                        <div class="img-overlay rounded-3xl group-hover:img-effect">
+                            <div class="bottom-area absolute bottom-8 left-5">
+                                <h4 class="text-base lg:text-lg font-semibold text-white dark:text-slate-300">Classical
+                                    photography</h4>
+                            </div>
+                        </div>
+                        <img src="img/recent-img3.jpg" alt="" class="rounded-3xl">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class=" bg-slate-200 pt-10 sm:pt-12 md:pt-14 lg:pt-20 lg:px-12 pb-8 dark:bg-slate-700">
+        <div class="heading my-6">
+            <div class="text-center sm:mx-12 md:text-left">
+                <h4 class="text-xl font-semibold sm:text-2xl lg:text-3xl text-red-500 uppercase dark:text-pros-dark">
+                    Portfolio</h4>
+            </div>
+        </div>
+        <div class="portfolio flex flex-col items-center justify-center">
+            <div class="porfolio-box flex flex-col items-center justify-center px-4 sm:px-2">
+                <div
+                    class="portfolio-item flex items-center space-x-4 justify-center flex-col space-y-4 sm:space-y-1 sm:flex-row">
+                    <div class="rounded-3xl  transition-all group ease-in  duration-500 ">
+                        <div class="imgbox relative">
+                            <img src="img/portfolio-img1.png" alt="" class="w-full   rounded-3xl">
+                            <div class="img-overlay rounded-3xl group-hover:img-effect">
+                                <div class="bottom-area absolute bottom-4 left-10 sm:bottom-8 sm:left-5">
+                                    <h4
+                                        class="text-sm sm:text-base lg:text-lg font-semibold text-white dark:text-slate-300">
+                                        Natural Site
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-3xl  transition-all group ease-in  duration-500 ">
+                        <div class="imgbox relative">
+                            <img src="img/portfolio-img2.png" alt="" class="w-full   rounded-3xl">
+                            <div class="img-overlay rounded-3xl group-hover:img-effect">
+                                <div class="bottom-area absolute bottom-8 left-5">
+                                    <h4 class="text-base lg:text-lg font-semibold text-white dark:text-slate-300">
+                                        Vacation special
+                                        photography</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-3xl  transition-all group ease-in  duration-500 ">
+                        <div class="imgbox relative">
+                            <img src="img/portfolio-img3.png" alt="" class="w-full   rounded-3xl">
+                            <div class="img-overlay rounded-3xl group-hover:img-effect">
+                                <div class="bottom-area absolute bottom-8 left-5">
+                                    <h4 class="text-base lg:text-lg font-semibold text-white dark:text-slate-300">
+                                        Product photography</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div
+                    class="portfolio-item flex  mt-4 space-x-4 space-y-4 item-center justify-center flex-col sm:space-y-1 sm:flex-row">
+                    <div class="rounded-3xl  transition-all group ease-in  duration-500 ">
+                        <div class="imgbox relative">
+                            <img src="img/portfolio-img4.png" alt="" class="w-full rounded-3xl">
+                            <div class="img-overlay rounded-3xl group-hover:img-effect ">
+                                <div class="bottom-area absolute bottom-8 left-5">
+                                    <h4 class="text-base lg:text-lg font-semibold text-white dark:text-slate-300">
+                                        Historical Places Shots
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side flex flex-col">
+                        <div class="upper-side flex flex-col sm:flex-row space-x-4 space-y-4 sm:space-y-1">
+
+                            <div class="rounded-3xl  transition-all group ease-in  duration-500 ">
+                                <div class="imgbox relative">
+                                    <img src="img/portfolio-img5.png" alt="" class="w-full   rounded-3xl">
+                                    <div class="img-overlay rounded-3xl group-hover:img-effect">
+                                        <div class="bottom-area absolute bottom-8 left-5">
+                                            <h4
+                                                class="text-base lg:text-lg font-semibold text-white dark:text-slate-300">
+                                                Videography</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-3xl  transition-all group ease-in  duration-500 ">
+                                <div class="imgbox relative">
+                                    <img src="img/portfolio-img6.png" alt="" class="w-full   rounded-3xl">
+                                    <div class="img-overlay rounded-3xl group-hover:img-effect">
+                                        <div class="bottom-area absolute bottom-8 left-5">
+                                            <h4
+                                                class="text-base lg:text-lg font-semibold text-white dark:text-slate-300">
+                                                Wildlife
+                                                photography</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lower-side flex flex-col sm:flex-row mt-4 space-x-4 space-y-4 sm:space-y-1">
+                            <div class="rounded-3xl  transition-all group ease-in  duration-500 ">
+                                <div class="imgbox relative">
+                                    <img src="img/portfolio-img7.png" alt="" class="w-full   rounded-3xl">
+                                    <div class="img-overlay rounded-3xl group-hover:img-effect">
+                                        <div class="bottom-area absolute bottom-8 left-5">
+                                            <h4
+                                                class="text-base lg:text-lg font-semibold text-white dark:text-slate-300">
+                                                Portraits</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="rounded-3xl  transition-all group ease-in  duration-500 ">
+                                <div class="imgbox relative">
+                                    <img src="img/portfolio-img8.png" alt="" class="w-full   rounded-3xl">
+                                    <div class="img-overlay rounded-3xl group-hover:img-effect">
+                                        <div class="bottom-area absolute bottom-8 left-5">
+                                            <h4
+                                                class="text-base lg:text-lg font-semibold text-white dark:text-slate-300">
+                                                Wedding
+                                                photography</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section for blog -->
+    <section id="blog" class='bg-slate-100 dark:bg-slate-800'>
+        <div class="activity pt-4">
+            <div class="swiper ">
+                <div class="my-4 md:mt-4 lg:mt-8 flex items-center justify-between">
+                    <h3 class="text-base font-semibold md:text-2xl lg:text-3xl dark:text-pros-dark">Activity of the
+                        month</h3>
+                    <div class="flex">
+
+                        <div class="swiper-button-prev after:content-['prev'] text-black dark:text-slate-100"></div>
+                        <div class="swiper-button-next after:content-['next'] text-black dark:text-slate-100"></div>
+                    </div>
+                </div>
+                <div class="swiper-wrapper space-x-6 py-10 px-5 pb-14">
+
+                    <div class="story swiper-slide group  transition-all ease-in  duration-500">
+                        <div class="imgbox relatmd">
+                            <div class="img-overlay rounded-3xl group-hover:img-effect">
+                                <div class="bottom-area absolute bottom-8 left-5">
+                                    <h4 class="text-base lg:text-lg font-semibold text-white dark:text-slate-300">Lorem
+                                        ipsum dolor sit,
+                                        amet consectetur adipisicing elit.</h4>
+                                    <a href="#"
+                                        class="text-white md:text-lg font-light mt-4 inline-block absolute top-96 group-hover:static dark:text-slate-300 ">Read
+                                        >></a>
+                                </div>
+                            </div>
+                            <img src="img/activity-img1.png" alt="" class="rounded-3xl">
+                        </div>
+                    </div>
+                    <div class="story swiper-slide group  transition-all ease-in  duration-500">
+                        <div class="imgbox relatmd">
+                            <div class="img-overlay rounded-3xl group-hover:img-effect">
+                                <div class="bottom-area absolute bottom-8 left-5">
+                                    <h4 class="text-base lg:text-lg font-semibold text-white dark:text-slate-300">Lorem
+                                        ipsum dolor sit,
+                                        amet consectetur adipisicing elit.</h4>
+                                    <a href="#"
+                                        class="text-white md:text-lg font-light mt-4 inline-block absolute top-96 group-hover:static dark:text-slate-300 ">Read
+                                        >></a>
+                                </div>
+                            </div>
+                            <img src="img/activity-img2.png" alt="" class="rounded-3xl">
+                        </div>
+                    </div>
+                    <div class="story swiper-slide group  transition-all ease-in  duration-500">
+                        <div class="imgbox relatmd">
+                            <div class="img-overlay rounded-3xl group-hover:img-effect">
+                                <div class="bottom-area absolute bottom-8 left-5">
+                                    <h4 class="text-base lg:text-lg font-semibold text-white dark:text-slate-300">Lorem
+                                        ipsum dolor sit,
+                                        amet consectetur adipisicing elit.</h4>
+                                    <a href="#"
+                                        class="text-white md:text-lg font-light mt-4 inline-block absolute top-96 group-hover:static dark:text-slate-300 ">Read
+                                        >></a>
+                                </div>
+                            </div>
+                            <img src="img/activity-img3.png" alt="" class="rounded-3xl">
+                        </div>
+                    </div>
+                    <div class="story swiper-slide group  transition-all ease-in  duration-500">
+                        <div class="imgbox relatmd">
+                            <div class="img-overlay rounded-3xl group-hover:img-effect">
+                                <div class="bottom-area absolute bottom-8 left-5">
+                                    <h4 class="text-base lg:text-lg font-semibold text-white dark:text-slate-300">Lorem
+                                        ipsum dolor sit,
+                                        amet consectetur adipisicing elit.</h4>
+                                    <a href="#"
+                                        class="text-white md:text-lg font-light mt-4 inline-block absolute top-96 group-hover:static dark:text-slate-300 ">Read
+                                        >></a>
+                                </div>
+                            </div>
+                            <img src="img/activity-img1.png" alt="" class="rounded-3xl">
+                        </div>
+                    </div>
+                    <div class="story swiper-slide group  transition-all ease-in  duration-500">
+                        <div class="imgbox relatmd">
+                            <div class="img-overlay rounded-3xl group-hover:img-effect">
+                                <div class="bottom-area absolute bottom-8 left-5">
+                                    <h4 class="text-base lg:text-lg font-semibold text-white dark:text-slate-300">Lorem
+                                        ipsum dolor sit,
+                                        amet consectetur adipisicing elit.</h4>
+                                    <a href="#"
+                                        class="text-white md:text-lg font-light mt-4 inline-block absolute top-96 group-hover:static dark:text-slate-300 ">Read
+                                        >></a>
+                                </div>
+                            </div>
+                            <img src="img/activity-img2.png" alt="" class="rounded-3xl">
+                        </div>
+                    </div>
+                    <div class="story swiper-slide group  transition-all ease-in  duration-500">
+                        <div class="imgbox relatmd">
+                            <div class="img-overlay rounded-3xl group-hover:img-effect">
+                                <div class="bottom-area absolute bottom-8 left-5">
+                                    <h4 class="text-base lg:text-lg font-semibold text-white dark:text-slate-300">Lorem
+                                        ipsum dolor sit,
+                                        amet consectetur adipisicing elit.</h4>
+                                    <a href="#"
+                                        class="text-white md:text-lg font-light mt-4 inline-block absolute top-96 group-hover:static dark:text-slate-300 ">Read
+                                        >></a>
+                                </div>
+                            </div>
+                            <img src="img/activity-img3.png" alt="" class="rounded-3xl">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section for people -->
+    <section id="people" class="bg-red-400 py-10 md:px-6 md:py-16 dark:bg-slate-700">
+        <div class="">
+            <div class="heading text-center">
+                <h5 class="text-xl font-semibold sm:text-2xl lg:text-3xl text-white my-6 dark:text-pros-dark">People Who
+                    Know Me</h5>
+            </div>
+            <div class="mt-10">
+                <div class="">
+                    <div
+                        class="flex flex-row flex-wrap items-center justify-center px-4 sm:px-1 space-y-5 md:space-x-4">
+                        <div class="swiper mySwiper w-full h-full">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide !w-full flex flex-col items-center justify-center text-center  ">
+                                    <div class="img-box">
+                                        <img src="img/about-me-img1.png" alt=""
+                                            class=" border-2 rounded-full px-1 py-1 w-[100px]">
+                                    </div>
+                                    <div class="content text-white mt-2 w-[400px] dark:text-sky-300">
+                                        <h4 class="text-lg font-semibold dark:text-pros-dark">Sherrie Rose</h4>
+                                        <p class="mt-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Labore quidem
+                                            a aperiam
+                                            explicabo. Voluptatibus consequatur perferendis totam illo dignissimos
+                                            facilis?</p>
+
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide !w-full flex flex-col items-center justify-center text-center  ">
+                                    <div class="img-box">
+                                        <img src="img/about-me-img2.png" alt=""
+                                            class=" border-2 rounded-full px-1 py-1 w-[100px]">
+                                    </div>
+                                    <div class="content text-white mt-2 w-[400px] dark:text-sky-300">
+                                        <h4 class="text-lg font-semibold dark:text-pros-dark">Sherrie Rose</h4>
+                                        <p class="mt-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Labore quidem
+                                            a aperiam
+                                            explicabo. Voluptatibus consequatur perferendis totam illo dignissimos
+                                            facilis?</p>
+
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide !w-full flex flex-col items-center justify-center text-center  ">
+                                    <div class="img-box">
+                                        <img src="img/about-me-img3.png" alt=""
+                                            class=" border-2 rounded-full px-1 py-1 w-[100px]">
+                                    </div>
+                                    <div class="content text-white mt-2 w-[400px] dark:text-sky-300">
+                                        <h4 class="text-lg font-semibold dark:text-pros-dark">Sherrie Rose</h4>
+                                        <p class="mt-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Labore quidem
+                                            a aperiam
+                                            explicabo. Voluptatibus consequatur perferendis totam illo dignissimos
+                                            facilis?</p>
+
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-pagination !bottom-[40%]"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact"
+        class="w-full h-[80vh] sm:h-[100vh] bg-[url(img/contatus.jpg)] bg-cover bg-no-repeat relative flex items-center justify-center py-6">
+        <div class="contact flex items-center justify-center">
+            <form action="#"
+                class="bg-white rounded-3xl border-none px-4 py-2 sm:px-8 sm:py-4 flex flex-col items-center  sm:absolute sm:top-20 sm:right-7 drop-shadow-lg dark:bg-slate-700 ">
+                <h4 class="uppercase md:text-2xl font-semibold text-red-400 py-2 sm:my-6 dark:text-pros-dark">Contact Me
+                </h4>
+                <div class="form-item mt-4">
+                    <input type="text" placeholder="Your Name"
+                        class="py-2 px-5 w-[17rem] sm:w-[20rem] outline-none bg-red-100 rounded-3xl border-4 border-transparent focus:border-red-200 dark:bg-slate-500 dark:focus:border-slate-400 dark:placeholder:text-slate-300 dark:border-slate-500 dark:text-slate-200">
+                </div>
+                <div class="form-item mt-4">
+                    <input type="email" placeholder="Your Email"
+                        class="py-2 px-5 w-[17rem] sm:w-[20rem] outline-none bg-red-100 rounded-3xl border-4 border-transparent focus:border-red-200  dark:bg-slate-500 dark:focus:border-slate-400 dark:placeholder:text-slate-300 dark:border-slate-500 dark:text-slate-200">
+                </div>
+                <div class="form-item mt-4">
+                    <textarea
+                        class="py-2 px-5 w-[17rem] sm:w-[20rem] outline-none bg-red-100 rounded-3xl border-4 border-transparent focus:border-red-200  dark:bg-slate-500 dark:focus:border-slate-400 dark:placeholder:text-slate-300 dark:border-slate-500 dark:text-slate-200"
+                        rows="7" cols="25" placeholder="Your Message"></textarea>
+                </div>
+                <div class="form-item mx-4">
+                    <button class="btn">Submit</button>
+                </div>
+
+            </form>
+
+        </div>
+
+
+    </section>
+
+    <footer class="bg-red-400 px-4 py-6 text-center dark:bg-slate-700">
+        <p class="text-base md:text-lg font-semibold text-white">© 2022 MyWorld | All rights reserved to MyWorld</p>
+    </footer>
+
+
+
+
+</body>
+
+<script>
+
+    let n = 3;
+    if (window.matchMedia("(min-width: 700px)").matches) {
+        n = 2;
+    }
+    else if (window.matchMedia("(min-width: 300px)").matches) {
+        n = 1;
+    }
+    else if (window.matchMedia("(min-width: 999px)").matches) {
+        n = 3;
+    }
+
+    const swiper = new Swiper('.swiper', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        watchSlidesProgress: true,
+        slidesPerView: n,
+
+    });
+
+    let swipe = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        slidesPerView: "auto",
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+
+
+
+
+
+    const menu = document.querySelector(".hamburger")
+    const sidebar = document.querySelector(".sidebar")
+    const closebtn = document.querySelector(".closebtn")
+
+    menu.addEventListener("click", () => {
+        if (sidebar.classList.contains("invisible")) {
+
+            sidebar.classList.add("visible")
+            sidebar.classList.add("z-10")
+            sidebar.classList.remove("invisible")
+            sidebar.classList.remove("-z-10")
+
+        }
+        else {
+            sidebar.classList.add("invisible")
+            sidebar.classList.add("-z-10")
+            sidebar.classList.remove("visible")
+            sidebar.classList.remove("z-10")
+
+        }
+
+
+    })
+
+    window.onclick = function (e) {
+        if (e.target == sidebar) {
+            sidebar.classList.add("invisible")
+            sidebar.classList.add("-z-10")
+            sidebar.classList.remove("visible")
+            sidebar.classList.remove("z-10")
+        }
+    }
+
+    closebtn.addEventListener("click", () => {
+        sidebar.classList.add("invisible")
+        sidebar.classList.add("-z-10")
+        sidebar.classList.remove("visible")
+        sidebar.classList.remove("z-10")
+    })
+
+    // Dark Mode toggle button
+
+    const toggle1 = document.querySelector("#toggle-dark");
+    const toggle2 = document.querySelector("#toggle-dark2");
+    const html = document.querySelector("html");
+
+    toggle1.addEventListener("click", () => {
+        html.classList.toggle("dark");
+    })
+    toggle2.addEventListener("click", () => {
+        html.classList.toggle("dark");
+    })
+
+</script>
+
+</html>
