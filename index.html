@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -17,7 +17,7 @@
     </script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/input.css">
 
 
 </head>
@@ -181,11 +181,11 @@
             <div class="img-box flex flex-col md:flex-row ">
                 <div class="relative">
                     <div class="img-overlay   "></div>
-                    <img src="img/girl1.jpg" alt="" class="w-full md:w-[50vw] ">
+                    <img src="/img/girl1.jpg" alt="" class="w-full md:w-[50vw] ">
                 </div>
                 <div class="relative">
                     <div class="img-overlay  "></div>
-                    <img src="img/girl2.jpg" alt="" class="w-full md:w-[50vw] ">
+                    <img src="/img/girl2.jpg" alt="" class="w-full md:w-[50vw] ">
                 </div>
             </div>
         </div>
@@ -678,30 +678,39 @@
 
 <script>
 
-    let n = 3;
-    if (window.matchMedia("(min-width: 700px)").matches) {
-        n = 2;
-    }
-    else if (window.matchMedia("(min-width: 300px)").matches) {
-        n = 1;
-    }
-    else if (window.matchMedia("(min-width: 999px)").matches) {
-        n = 3;
-    }
+ 
 
     const swiper = new Swiper('.swiper', {
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        loop: true,
         watchSlidesProgress: true,
-        slidesPerView: n,
+        slidesPerView: 1,
+
+        autoplay: {
+        delay: 8000,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1.25,
+        },
+        700: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
 
     });
 
     let swipe = new Swiper(".mySwiper", {
         spaceBetween: 30,
-        slidesPerView: "auto",
+        slidesPerView: 1,
+        centeredSlides: true,
+        loop: true,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
